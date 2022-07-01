@@ -1,0 +1,28 @@
+body {
+  padding: 2rem;
+  background: #151b1e;
+  color: #fff1e6;
+  font: 1.2rem/1.5 "Rubik", sans-serif;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+}
+.grid > div {
+  flex: 1 1 20rem;
+  padding: 2rem;
+  background: #1c2327;
+  border-radius: 2rem;
+}
+.grid > div:first-child {
+  flex-basis: 100%;
+}
+.grid > div *:last-child {
+  margin-bottom: 0;
+}
+.grid h1, .grid h2 {
+  margin-top: 0;
+  color: #e84a5f;
+}

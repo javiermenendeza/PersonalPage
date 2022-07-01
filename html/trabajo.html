@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Trabajo</title>
+  <link rel="stylesheet" href="../style/style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="cards">
+
+  <div class="card">
+    <div class="card__image-holder" style="background: white;">
+      <img class="card__image" style="margin-left: 30px; " src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOAAAADgCAMAAAAt85rTAAABqlBMVEUAAADrmAz///9MpbNcydjwmwzxnAwYKzaqbggGBADAfAn0ngpPrbtezdxGl6UtKSARJzMUISw9gY3nlQwTHSnAAACMjo8AHywAFiAFCQyfnp48OzyFVge/vr4zbHhILwQdNUIAGyyto5ELFBkiPk2cZQh8UAbMjz4KLTzKAACyAAApS162trbokgAAJTcRICjo6OiCgoLajQuNWwfHAACqAADj4+PKgwqwcggeHh7Y2Njz8/OpqakUGx1RUVFxSQVXOAQjFwEpKSndAABsbGyWah+hAABaWlr17ubp2MPZrXXlqFsyIAJVuskmJiZlQQUsHQKCAAiQAAA3Nzfj3dHw1rvsyZ/RnVDMjSbjmS3ppETSoWHXuY/jsnTds4HZx63iokx8VxlYQx09MRxnSxtBPjDKnmArV2MACC6tnH7nwZSRhnp+YD3Qr4TSu5w/KQNRBABaBBFnLwSGAACPQgXZ08VjFwKDLgO7GxtxJwObWA5yEgFcGwJ3PwVTKgNCFAGHVVGzPT27UlNtW1ugZEXVVlZKLS3CNTqhUVErFBTTPz9wODjnHh+LJSskjH8IAAARnUlEQVR4nM2diX8bxRXHV4JZyVIoCosElm3sFMvBimSklWTJkuIbWz6IHCfBDjlpk1AoxEAguA2UQktpKf2fO7u6Zndn515Jv88n+jjWtV+/mTfvvTlWCweu1s29vVsf7J9cPq2apmmEDNOsnp6enux/cGtv75tWK9hv14L8cIi2f/m2YeShAAAhRPC/wPp1PnT78v6tmzcDu4agAButB/sHt828EwsnG9T48M7dVqsRwIUEAth6eg+yMcChnPm8+fD+nvJrUQ/44H4VNjweNgfkwVO1nVItYGPvxLKcCBwCWf1UYZdUCAjpDDm4PqNx+kCVHZUBtu5/qISuz3jyQInPUQT44MBUiNdlvH1XAaIKwMZd5XRdRHNfujfKA968A51mUMrnTyVHDlnA1hMjODxLIP9QClEOsHXfCKJtuhFPJBBlAK2+FzheF1F41JAAfDokvA7ivqBHFQbcqw4Pz1I+f3eYgK07gQwMZEQhhyoG+GCIrXMg2E75u6IIYOtk+ObrKG9yG1EA8Kk5Ijwb8Q6ns+EGbJyMonUihJxG5AXcG6X5bIH8/QABPx9V70OVv8zRTLkACyNunj0BjmbKA/jNyJtnT4B91OcAfDoOzbOn/L5ywM/Ho3n2xDpeMAM+GS8+SPiQKaxhBUTdi8GjAAlPWQgZAVE+sKaxa1oPjhCYDIRsgAdo+wQLHIClAAGZCJkAHXxjBBgCBpWQBdDJN06ADIQMgA9d/nOcAOMlbVkW0M2nGlCPC8kOOuLT8CvIhFTAA8/4pxQQmB+9KqI/xOAH6yX7O4iENMA73vGdC5A2TJh/vJTw1Zz/U0uXYgBkOt8xSSKkAGL4QqB0hmr20Il0OIs+myHHr/qjSxFfzc1sJ3yfTDzu8WnaSkEUEB+fuXpNzcE3UfV2FX/F30wkLvqqufu673ORpenBl276x6VEQKb4GkSdgDGenAMCfvyaiN66GJlEvvWGEOBTpvhaEvDiW+9fENBLrzsAtW0BwD22QFka8MJLInIBamluwBZj/i5vQSWA2gwv4AnjhY4LoI8r9QVkTuDHBVCb4gK8yZzAjw2gVuQAbN1mvszxAcR2Qx/Ae+wVmDEC1DDjPR6QbQQcP0DMaIgFbPGUisYJUMuxAZ5wXOJ4Aa54Egsc4AOuEuhYAXobKQ6QbwpivAA9nhQDuM9Xwx4zwBUqIPsQP5aAWooC2HjIOYc0lGzCTpHeR+QP6BoMPYC3eCdZAga0sF629MorLw/0ygV/wCIRsMEeo6kC9GuiFywyBxYCSLCgVicB3uWeJQsC0GLzQWMA3CUANkxePuVN9ML7BDAmQMdQ4QLkN6BaQCY6KuCUL6CAARUCQjpSs2QHRE3oBBQwoKo+yEFHB7zmAyhiQDUW5KKjAyImdACKGFABIGvH4wBcxQLyj4FKALnpGAAHYyEKyJcmKQPka5yMgNs4QCEDjimgVvAC7okt9RlTwJQXkLWUrRxQRIRgu6OphhuwIbhWSxbw49+J6LWLFMDeSDEA5CkVqgN8NZF4XUQXIzTAXTfgqeBiSSlA8B5hCpusd8l82mTBCchbqVADGNLfiyzZSrw7UGLJNTePPJlg5NO0phPwvuhqVznAuBF7z9ajt6/29PYj+D+aqHzdae0eoFgUIwsIzI8e49dQuP6b6P3rP5F4l9IHu0OhJttCZQBBdXNpbn4+Epmfn4vw/0CzYhMF5CyGqgEMPV6KzM3NRewH3x8i+B8SVD+6igI+FOWTANQ/ujR35cp8Yv7KlbnIlStXIvBhPmL9KmL/ah77K+SlCYY22gW8Kb70WBgQ1N6ZQ8zC92Dbd47iSpsDQKFMUBLQeAx70nxk8BDxeZhDHua6D923kBvp9gBQdJSXAIw/WvIfxedRzRGGeyLgtUYPkGvGUw0gqP3pkldvdPUOqqU3/PUmkbDeAxTMlGQAQ5/8HqMUt26QAIs9wE+HDwg+yc0oUHOFBLjbA6xK7EoStaD551QqzS4fA64Sm+hmoQsos21HFBCETi879NkUv4h4mtUJbcBvRgHYOZmrr3jG5xqllO4AfjAaQFTxUhB8sBPagPdkNgYqAQSB2A92wg6gjI9RAhgUH0zrbUCRKQmVgHpQfJo2YwG2pPY+ygMG4186ymkS9TRFgEHyaUUL8HO5k94kAQPrf7ZWLUCOxaHqAYPl0yYtwAMZPtmqWrB8UNb+gdEBBs83WsAAx4exAAy4//UB5Y4AkAi2h8Gnic5cywMOof91ACUPqRAuOmHzh9mFUiZTq8WqsVotmilNtzfkAcWL2jKAXv/SXqgZ8ON0vZ8jwh9DIcPMLMw6vqFkhNZ5AJ/InaIiBujqf0ftmBnSfd4JdMOMto96r83EQ3qbB/DOCACd9juLms69sF0z6gNkoJu12QnrxRvQ6escx2mMBNDhX9ZjDjqgx41aaXphYWF6ulQz4n1IEDetbnvGDXgwdEDUv6xXXXixaecFlmIDO+p6ZoPfgkMHRNrnUc1x2jgwoofuC9S0w+jg2G5gWJ6IE1CKjx8Q8S9rzj0oeuwMf5GzSFHF+mmsAQf2m4i6XkqorDkPHBhnwIF/2ai6joEgXvUC+rE6R5FRBNBZsXUD6uizHr7+pZ25jgc21skX2kb+HAEDVmMOOb3eRMbxZNX51kH7XHfN2AHq2I2c+8EJyFtEET+0CiB8zm9lueQa4Hm1BKDweTID+826tvCBKsNnbfTfxAfIG8kIAyL+xbNFcZb0IT21xxsQiV/ccwV6lPARiHqNlCdV5s8mBAGR+CXjPibI9Bng3ZrtXQIXIG8+KAaIXFPb/RcFjAbsm5APkDejFwJE7OftgGw90NJ6XACQtyYjcmgVmh95GiiIsX9ep/fyAXJX1WrT7Oq0KUd+5Pm8OMdfbFoEkLcuCjNtZnmvBxOrchSWNuwACNTor5QA5JWDr+19mqOFdv8+4wXorL94p8sB1/qDtRA3YEMyX6LIWd/tukEH4DoP4JHJDShbGOXhQwLmvgwevk4bZQeclJ/hJctd/8Qsa2SJsxEtWKc2MgOuys/R8/DhznJkD2M6OjOhmAGL8qssSPLMr2DGCDCNvTJFyrGukwG6UTV5T3v18J3hFt5ylOH5Za+ToS9oBnpt/YvnX5Yk+ez+45bBHIgKaHK5s1aN3EZBKPbVs0p25/gF15ovTDyF8aEh8whzYarUXatG9jLA/P5ZMpnMZneSX8vxaVXM68wA+XqrDYnrRUH1eXkxm1zMZpOVHfb5adz8La4LMlVjhNXsrvgleRnj+dZWMpssJ8/L2eS3zPPTuPjLG4fyRqK86q74JXkZUILGgxZMLlaSyUoF14swwq8Pmca8mSfq4lZ/zTZh1T0oVZLnsAdavbCczX7LxOeTr7nnIuyXco7zXOqvuid1QuOLRYh3noV40IRZ3EWyXjSuBwe6FijVA2zc9r9avVRZTJbLlfOsbcJn9NHed30IbpQJFLC/8yV8mWAX4/li2Xaii5VscifpKakw82k4X6YHGKlt9vcuEdfd65mdxWw5WUlao0X2/JgS2BFMggXkKWFxCtl9dpM4UPylXLZ8DDRjslzJ/pVoQkI9aGLYFkT2DxJnYPTo8ZbtY8qWn8kSTUgqwg8dsIEAEqu/xlflZNbypfAf2YTE9WfDBnTs4SVWnkDsmR2sJZP2UHGMCynpfEPvg45d2JQjDb+HxhuY8GsfE9JcPhYwmD09lhz76Mm7eEH1+mLSNqHlSCs7+LSJWm8e7jjoPAmBUh2NIyaEidPXOED6peIimeBWxbrOsiCn9YgJK1bahLEFw/pWXKQeWCx6teECJE8yxRfOrdHezguttEmETysNM5voHluFnAhEjlCqL8rndrxt5YaViru1MXWlNcznBpYP1t2A4SdEQCvmhnjnNiE0oTM5Z2to7rUx9jsDyui9ZzrRNrqaL+xeCJMKmPnuXHf0J0ZXuIFrJAEB9m6wgZ6rRq4e2iYsl88tR1o5vo5fH0IRzo2aE0HwTTYwgJS57E7adJ60Au+d60gRnn1/AO42U0YgZcP+Wc2Osw0/JJoQwLTJprMAj7/SB79n/lrv9DV9EZ6YlnGAtFkY8Hxxa7ELuPNdrz/xDGQbuCg2iNL94ER4nvNFQbSytdghzO686HoZvlALU9Hhnnxpx2q1GmblM6o6HpB2rIz+/c7W1la3jf7Nnqvl3J8zi5k+443VanEAKBMag+NF3YcYU87xN0rHXcJKx4Tc+48wU/Sc44Q9h00BrPsC0k4GAhlIuNjphT+YgD9SXvDO0XNOYdvlcTIgetA29znbC9mtrbJtwuN2VSBQxgQzjCvxurK7MRmw7g9In842vuub8PjvxNNq8PIG3FxLw7rREBHQcVMNz1n3tMlQqwLV8TPZH3/6Bz+gtzDDl090AnYiYIEEyLA075+/2W305/Of/sXP59of0Llanrd3vBQJ0HmbN+8NNWgHxYKTX2AbPf/553//h+EERYw8AWl8nf3N3SWxBEDXLUMwdwyh+Blw+svWr9B8/90WwoPX6PYzPLFQN7wgAOZogOH7lIAtmv3t1x+/TDdTgoBayT1UsE/THwKaBVfDVEDK8TIg9uJ/nz261sw1r4kSesoBzKXDGBXQfeMlHCDtiCfTgOP71EyuKAo44Q6YTMYVo/3V3r6AnhtJYu+chb956+APbveZ1ExTYBjsyLOvh82EG1UaoLuB+gCSj4vt+oRNCRNqay5Ck5IddDTIRfwA6x4WLCBxMOzH16lck3quma9coyFTbW1h8HofQMydTvGAhCWkg/xhZSYn7EihDZ2EcXpWuI68Aw/obaC+gL4RG5rfFmdy5JP3iGo7959Rt9fNoq/GA+Juc+oD6HeosSM/Wsnl0uKA2rrTlxpkwraj12IBmzgQP0B8WuGKObalTKgducZDUlYx7fRKOEDsPU4J9+HF3Mjcnb+vNKVMaJURHZvMfdOKjdig1AF88kH8XWoJgN4pUW99AppwV4rwqIqGbSCEdTWHGeSoABC17I4B9Llluz+g517RmPrZZDqXJp5gStea6UA0Mq6ueLgWGxwToBvRI3vHuRfQ507RxLuZO+/2ja2/7M7kRJOKnjYWTLSh6iEzVmqv22pP18zBkwBUS1Y8YK1E8gD63eubfD961NH4rA+BMfemJCG0YjWElhOBHu8KOY0kZES7tl2LewHxDoYKiIz3fvXB1ZxEwDbQWcmENPixF1jnk2QGW7834ADqAtz1RyAD9gn965/pnHjM7dRCtArijlMGLLR4qBp1uZ512G0dgD4OlAWwm/0S6vOKTGhrYuNwLVOLxaq2YrFYrdQ+wmRSE0dH6JzbDcwdopkBbRsS67upXE6RCRECS6wvvkbiowOG7+XJ8ytTCk0oohUiHwNg+IBSny/mcuJpk7QofCyAYcpIB2NuibRJUpsUPibAMKUJbuekYm4ZUfnYACmEkzBtot5hJhDR2iczIIUQmlA2YBMS2X9yAZIJr+bqMyMgJI5/vIBhYuKXXl4uDN3R4CowEoDhHOG7istQcpkht/zja0HAcJ3wZcuFQqE5PDiNkB+JA4YLvpMRq3UIWJfPm9iVo18uPyBhyC9CwMLw/MwN9xSLKsCwbzPMFQoNUi9VKsbuJwIY9muHm/XltPKkAq9J5uYpAhhu+DTE1WEF3LveCRalgOTxInil6BcoCxguDHnEQzTF7l0kAKERr46Gj3XwkwYMN0aRxG9zm08cMByeGXYWv8LlPOUBCWNiIEr5zD0ECEjJMJSqyJIZqQcMN4aTIxUFrScPaCEGHmIXRXyLMkA4KqaFVzwxaEXIdSoFhMoFZcWVtETjVAgIB40ggptdv0lNHikChJ0xrbY2OpWSbJtdKQOEWqbcsJJdm9t14XHBJZWAUHXyXVWZdG13RrrnDaQYEKrelLHjVFpFx0OkHtDSjFCHXE0phrMUDKClemqbfYCc2k7zJerMCg4QqlCop7d3p0icK1O7xWa9oMqleBUoYEeN5Xq9mSpu765OTd24sbm5eWNqdXd3u9icqdfry8GhdTQEwNHq/4kvPLMWsZG9AAAAAElFTkSuQmCC" alt="wave" />
+    </div>
+    <div class="card-title">
+      <a href="https://www.reparacionportatilesmadrid.net/informaticocenter-reparacion-de-ordenadores.html" class="toggle-info btn">
+        <span class="left"></span>
+        <span class="right"></span>
+      </a>
+      <h2>
+          Técnico Informático
+          <small>www.reparacionportatilesmadrid.net</small>
+      </h2>
+    </div>
+    <div class="card-flap flap1">
+      <div class="card-description">
+        Montaje y mantenimiento de ordenadores y portatiles, asi como creación de paginas web y administracion web mediante CMS(JOOMLA y WORDPRESS)
+      </div>
+      <div class="card-flap flap2">
+        <div class="card-actions">
+          <!-- <a style="z-index: 99999;" href="https://www.reparacionportatilesmadrid.net/informaticocenter-reparacion-de-ordenadores.html" class="btn">Read more</a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card__image-holder">
+      <img class="card__image" style="margin-top: 80px;" src="https://estaticos.datasystem.es/images/logo-data-4.png" alt="beach" />
+    </div>
+    <div class="card-title">
+      <a href="#" class="toggle-info btn">
+        <span class="left"></span>
+        <span class="right"></span>
+      </a>
+      <h2>
+          Técnico Informático
+          <small>www.datasystem.es</small>
+      </h2>
+    </div>
+    <div class="card-flap flap1">
+      <div class="card-description">
+        Principal ocupacion en laboratorio de informática; montaje y mantenimiento de equipos informaticos así como Help Desk y soporte de software a empresas a distancia, diseño e implantación de redes locales en empresas e institutos
+      </div>
+      <div class="card-flap flap2">
+        <div class="card-actions">
+         <!--  <a href="#" class="btn">Read more</a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card__image-holder" style="background: white;">
+      <img class="card__image" style="margin-top:15px; margin-left:50px;" src="https://media-exp1.licdn.com/dms/image/C4D03AQEC7P7yQMMvqQ/profile-displayphoto-shrink_200_200/0/1517446964306?e=2147483647&v=beta&t=muGObRyHeshw4BeSWFNezXw37GyySTLSZquTD1j3ZQs" alt="mountain" />
+    </div>
+    <div class="card-title">
+      <a href="#" class="toggle-info btn">
+        <span class="left"></span>
+        <span class="right"></span>
+      </a>
+      <h2>
+          Desarrollo Web
+          <small></small>
+          <small>www.datasystem.es</small>
+      </h2>
+    </div>
+    <div class="card-flap flap1">
+      <div class="card-description">
+        Puesto en Desarrollo y administracion de Paginas Webs, amplia utilizacion de Sistemas de Administracion de Contenido como JOOMLA, WORDPRESS y PRESTASHOP
+      </div>
+      <div class="card-flap flap2">
+        <div class="card-actions">
+<!--           <a href="#" class="btn">Read more</a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+<!--   <div class="card">
+    <div class="card__image-holder">
+      <img class="card__image" src="https://source.unsplash.com/300x225/?water" alt="water" />
+    </div>
+    <div class="card-title">
+      <a href="#" class="toggle-info btn">
+        <span class="left"></span>
+        <span class="right"></span>
+      </a>
+      <h2>
+          Card title
+          <small>Image from unsplash.com</small>
+      </h2>
+    </div>
+    <div class="card-flap flap1">
+      <div class="card-description">
+        This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
+      </div>
+      <div class="card-flap flap2">
+        <div class="card-actions">
+          <a href="#" class="btn">Read more</a>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <div class="card">
+    <div class="card__image-holder">
+      <img class="card__image" style="margin-top: 12px;" src="https://img.freepik.com/free-vector/colorful-science-education-background_23-2148490697.jpg?t=st=1656519858~exp=1656520458~hmac=e088214d5edc8229f9e76199692e95d04163c28124dfb1bcaab3fa9d12f27563&w=1380" alt="field" />
+    </div>
+    <div class="card-title">
+      <a href="#" class="toggle-info btn">
+        <span class="left"></span>
+        <span class="right"></span>
+      </a>
+      <h2>
+          Desarrollo Web
+          <small>www.yekzyscience.es</small>
+      </h2>
+    </div>
+    <div class="card-flap flap1">
+      <div class="card-description">
+        Proyecto de plataforma con soporte de Física y Química para profesores de SEK El Castillo con herramientas interactivas y videos explicativos; desarrollado en HTML/CSS/JavaScript
+      </div>
+      <div class="card-flap flap2">
+        <div class="card-actions">
+          <!-- <a href="#" class="btn">Read more</a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- <div class="card">
+    <div class="card__image-holder">
+      <img class="card__image" src="https://source.unsplash.com/300x225/?river" alt="river" />
+    </div>
+    <div class="card-title">
+      <a href="#" class="toggle-info btn">
+        <span class="left"></span>
+        <span class="right"></span>
+      </a>
+      <h2>
+          Card title
+          <small>Image from unsplash.com</small>
+      </h2>
+    </div>
+    <div class="card-flap flap1">
+      <div class="card-description">
+        This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
+      </div>
+      <div class="card-flap flap2">
+        <div class="card-actions">
+          <a href="#" class="btn">Read more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card__image-holder">
+      <img class="card__image" src="https://source.unsplash.com/300x225/?kite" alt="kite" />
+    </div>
+    <div class="card-title">
+      <a href="#" class="toggle-info btn">
+        <span class="left"></span>
+        <span class="right"></span>
+      </a>
+      <h2>
+          Card title
+          <small>Image from unsplash.com</small>
+      </h2>
+    </div>
+    <div class="card-flap flap1">
+      <div class="card-description">
+        This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
+      </div>
+      <div class="card-flap flap2">
+        <div class="card-actions">
+          <a href="#" class="btn">Read more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="card">
+    <div class="card__image-holder">
+      <img class="card__image" src="https://source.unsplash.com/300x225/?underwater" alt="underwater" />
+    </div>
+    <div class="card-title">
+      <a href="#" class="toggle-info btn">
+        <span class="left"></span>
+        <span class="right"></span>
+      </a>
+      <h2>
+          Card title
+          <small>Image from unsplash.com</small>
+      </h2>
+    </div>
+    <div class="card-flap flap1">
+      <div class="card-description">
+        This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
+      </div>
+      <div class="card-flap flap2">
+        <div class="card-actions">
+          <a href="#" class="btn">Read more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card__image-holder">
+      <img class="card__image" src="https://source.unsplash.com/300x225/?desert" alt="desert" />
+    </div>
+    <div class="card-title">
+      <a href="#" class="toggle-info btn">
+        <span class="left"></span>
+        <span class="right"></span>
+      </a>
+      <h2>
+          Card title
+          <small>Image from unsplash.com</small>
+      </h2>
+    </div>
+    <div class="card-flap flap1">
+      <div class="card-description">
+        This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
+      </div>
+      <div class="card-flap flap2">
+        <div class="card-actions">
+          <a href="#" class="btn">Read more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+ -->
+</div>
+<a href="../menu/menu.html"><img style="width: 50px; height: 50px; margin-top: 100px;" src="https://change-lebanon.org/wp-content/uploads/2021/07/thumbnail_left.png" alt=""></a>
+<!-- partial -->
+  <script src='../script/script1.js'></script>
+<script src='../script/script2.js'></script><script  src="../script/script.js"></script>
+
+</body>
+</html>
