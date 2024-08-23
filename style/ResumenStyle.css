@@ -418,12 +418,15 @@ h3 {
 
 .resume .func .skills-soft ul {
   display: flex;
+  flex-wrap: wrap; /* Allow wrapping to the next line */
   justify-content: space-between;
   text-align: center;
 }
 
 .resume .func .skills-soft ul li {
   position: relative;
+  width: 18%; /* Adjust the width to ensure five items per row */
+  margin-bottom: 15px; /* Add some space between rows */
 }
 
 .resume .func .skills-soft ul li:hover svg .cbar {
@@ -437,19 +440,19 @@ h3 {
 }
 
 .resume .func .skills-soft ul li svg {
-  width: 95%;
+  width: 110%; /* Increased size */
   fill: transparent;
   transform: rotate(-90deg);
 }
 
 .resume .func .skills-soft ul li svg circle {
   stroke-width: 1px;
-  stroke: #ffffff;
+  stroke: #FFD700; /* Yellow color for the background circle */
 }
 
 .resume .func .skills-soft ul li svg .cbar {
   stroke-width: 3px;
-  stroke: #ffb300;
+  stroke: #FFD700; /* Yellow color for the progress circle */
   stroke-linecap: round;
 }
 

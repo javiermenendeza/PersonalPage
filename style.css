@@ -13,6 +13,34 @@ html, body {
   perspective: 500px;
 }
 
+
+
+.back-arrow {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  font-size: 2rem; /* Increase the size of the icon */
+  color: #007BFF; /* Set the arrow color */
+  background-color: white; /* Background for contrast */
+  border: 2px solid #007BFF; /* Border to match the arrow color */
+  border-radius: 50%; /* Rounded shape */
+  padding: 10px; /* Add padding to create space around the icon */
+  text-align: center;
+  text-decoration: none; /* Remove underline */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.back-arrow:hover {
+  transform: scale(1.1); /* Slightly increase size on hover */
+  background-color: #007BFF; /* Change background on hover */
+  color: white; /* Change icon color on hover */
+}
+
+.card{
+  z-index: 2;
+}
+
 i {
   display: block;
   position: absolute;
